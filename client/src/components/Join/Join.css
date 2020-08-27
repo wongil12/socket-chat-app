@@ -11,6 +11,7 @@
     width: 400px;
     height:250px;
     background:rgba(255,255,255,0.1);
+    box-shadow: rgba(10,10,10,0.2) 5px 5px 10px;
 }
 .heading {
     color:#55efc4;
@@ -50,7 +51,8 @@
     border: 1px solid #00cec9;
     color: #00cec9;
     background: none;
-    transition: 0.5s;
+    transition: 0.3s;
+    cursor: pointer;
 }
 .button:hover {
     background: #00cec9;
