@@ -1,0 +1,58 @@
+.joinOuterContainer {
+    display: flex;
+    justify-content: center;
+    padding-top: 20vh;
+}
+.joinInnerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 20px;
+    width: 400px;
+    height:250px;
+    background:rgba(255,255,255,0.1);
+}
+.heading {
+    color:#55efc4;
+    margin-bottom: 5px;;
+}
+.heading~div {
+    width: 100%;
+    height: 40px;
+    margin: 7px 0;
+}
+.heading~a {
+    width: 100%;
+    height:40px;
+    margin-top: 7px;
+}
+.joinInput {
+    width: 100%;
+    height: 100%;
+    background: none;
+    box-shadow:none;
+    border:none;
+    border-bottom: 1px solid  rgba(129, 236, 236, 0.5);
+    color: #fff;
+    transition: 0.5s;
+}
+.joinInput::placeholder {
+    color: rgba(129, 236, 236, 0.4)
+}
+.joinInput:focus {
+    outline: none;
+    border-bottom-color: rgb(129, 236, 236);
+}
+
+.button {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #00cec9;
+    color: #00cec9;
+    background: none;
+    transition: 0.5s;
+}
+.button:hover {
+    background: #00cec9;
+    color: #fff;
+}
