@@ -15,12 +15,14 @@ const TextContainer = ({ users }) => (
                     <h1>Chatting</h1>
                     <div className="activeContainer">
                         <h2>
-                            {users.map((name) => (
+                            {users.map((name) => {
+                                console.log(name);
+                                return (
                                 <div key={name} className="activeItem">
-                                    {name}
+                                    {name.name}
                                     <div className="onlineIcon"></div>
                                 </div>
-                            ))}
+                            )})}
                         </h2>
                     </div>
                 </div>

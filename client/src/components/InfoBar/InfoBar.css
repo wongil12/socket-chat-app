@@ -1,0 +1,58 @@
+.infoBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    width: 100%;
+    height: 30px;
+    background: #0984e3;
+}
+.leftInnerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100% - 30px);
+}
+.leftInnerContainer > h3 {
+    display: inline-block;
+    color:#fff;
+    width: calc(100% - 18px);
+    font-size: 18px;
+    padding-top: 3px;
+}
+.onlineIcon {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background: #55efc4;
+}
+.closeIcon {
+    position: relative;
+    width: 13px;
+    height: 13px;
+    background: #b2bec3;
+    border-radius: 100%;
+    cursor: pointer;
+}
+.closeIcon::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 50%;
+    left:50%;
+    transform: translateX(-53%) translateY(-53%) rotate(45deg);
+    width: 9px;
+    height: 3px;
+    background: #2d3436
+}
+.closeIcon::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 50%;
+    left:50%;
+    transform: translateX(-53%) translateY(-53%) rotate(-45deg);
+    width: 9px;
+    height: 3px;
+    background: #2d3436
+}
